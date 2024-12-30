@@ -1,0 +1,42 @@
+.gallery_container {
+    height: 100vh;
+    background-color: rgb(39, 39, 92);
+    padding: 40px 10rem;
+    display: grid;
+    grid-template-areas:
+        "one one one two"
+        "one one one two"
+        "three four four four"
+        "three four four four";
+    gap: 20px;
+}
+
+.gallery_container>div {
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery_container>div>img {
+    width: 250px;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+    background-color: #696969;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
